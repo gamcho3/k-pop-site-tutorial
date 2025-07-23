@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Música Pop Latina</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">World Pop Music</a>
+            <ul class="nav-links">
+                <li><a href="index.html">K-pop</a></li>
+                <li><a href="jpop.html">J-pop</a></li>
+                <li><a href="american-pop.html">American Pop</a></li>
+                <li><a href="latin-pop.html" class="active">Latin Pop</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="https://images.unsplash.com/photo-1535324492437-d8dea70a38a7" alt="Latin Dance">
+                    <div class="swiper-text">
+                        <h2>Ritmos Latinos</h2>
+                        <p>La fusión perfecta de baile y música</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7" alt="Festival Latino">
+                    <div class="swiper-text">
+                        <h2>Festivales Vibrantes</h2>
+                        <p>Celebrando nuestra cultura musical</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://images.unsplash.com/photo-1504609773096-104ff2c73ba4" alt="Beach Party">
+                    <div class="swiper-text">
+                        <h2>Música Tropical</h2>
+                        <p>El sonido del verano eterno</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea" alt="Urban Latin">
+                    <div class="swiper-text">
+                        <h2>Fusión Urbana</h2>
+                        <p>El nuevo sonido latino</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>✨ Bienvenidos al Pop Latino ✨</h1>
+        </header>
+        
+        <main>
+            <section class="intro">
+                <h2>El Mundo del Pop Latino</h2>
+                <p>La música pop latina fusiona ritmos tradicionales con sonidos modernos, creando un estilo único que hace bailar al mundo entero.</p>
+            </section>
+
+            <section class="popular-groups">
+                <h2>Artistas Destacados</h2>
+                <div class="group-list">
+                    <div class="group">
+                        <h3>✦ Bad Bunny ✦</h3>
+                        <p>Revolucionando la música latina con su estilo único y letras innovadoras</p>
+                    </div>
+                    <div class="group">
+                        <h3>✦ Rosalía ✦</h3>
+                        <p>Fusionando flamenco con pop moderno y creando tendencias globales</p>
+                    </div>
+                    <div class="group">
+                        <h3>✦ Karol G ✦</h3>
+                        <p>Dominando las listas de éxitos con su reggaeton pop y colaboraciones únicas</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="characteristics">
+                <h2>Características del Pop Latino</h2>
+                <ul>
+                    <li>✨ Ritmos Bailables Únicos</li>
+                    <li>✨ Fusión de Estilos Tradicionales y Modernos</li>
+                    <li>✨ Letras Apasionadas y Emotivas</li>
+                    <li>✨ Colaboraciones Internacionales Innovadoras</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-spotify"></i></a>
+                </div>
+                <p class="copyright">© 2024 World Pop Music. ¡Celebrando la diversidad de la música! ✨</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            autoplay: {
+                delay: 6000,
+                disableOnInteraction: false,
+            },
+            effect: 'fade',
+            fadeEffect: {
+                crossFade: true
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                bulletActiveClass: 'swiper-pagination-bullet-active pink',
+                bulletClass: 'swiper-pagination-bullet'
+            }
+        });
+    </script>
+</body>
+</html>

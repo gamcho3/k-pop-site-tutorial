@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J-pop の世界</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">World Pop Music</a>
+            <ul class="nav-links">
+                <li><a href="index.html">K-pop</a></li>
+                <li><a href="jpop.html" class="active">J-pop</a></li>
+                <li><a href="american-pop.html">American Pop</a></li>
+                <li><a href="latin-pop.html">Latin Pop</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="https://images.unsplash.com/photo-1492571350019-22de08371fd3" alt="Japanese Concert">
+                    <div class="swiper-text">
+                        <h2>アニメと音楽の融合</h2>
+                        <p>アニメカルチャーと共に発展するJ-POP</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://images.unsplash.com/photo-1493666835815-de6b83927e24" alt="Japanese Street">
+                    <div class="swiper-text">
+                        <h2>都市型ポップカルチャー</h2>
+                        <p>渋谷・原宿から世界へ</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://images.unsplash.com/photo-1542051841857-5f90071e7989" alt="Japanese Festival">
+                    <div class="swiper-text">
+                        <h2>伝統と現代の調和</h2>
+                        <p>日本の文化を現代に表現</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://images.unsplash.com/photo-1524413840807-0c3cb6fa808d" alt="Tokyo Night">
+                    <div class="swiper-text">
+                        <h2>革新的な音楽シーン</h2>
+                        <p>次世代のサウンド</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>✨ J-pop の魅力的な世界へ ✨</h1>
+        </header>
+        
+        <main>
+            <section class="intro">
+                <h2>J-popの素晴らしい世界</h2>
+                <p>J-popは日本の豊かな文化と現代的なサウンドが融合した音楽です。アニメやドラマとの結びつきも強く、独特の世界観を持っています。</p>
+            </section>
+
+            <section class="popular-groups">
+                <h2>トップアーティスト</h2>
+                <div class="group-list">
+                    <div class="group">
+                        <h3>✦ YOASOBI ✦</h3>
+                        <p>小説を音楽化する斬新なアプローチで人気急上昇中のデュオ</p>
+                    </div>
+                    <div class="group">
+                        <h3>✦ Official髭男dism ✦</h3>
+                        <p>心に響く歌詞と印象的なメロディで愛される実力派バンド</p>
+                    </div>
+                    <div class="group">
+                        <h3>✦ Ado ✦</h3>
+                        <p>独特な歌声とパワフルな表現力で注目を集める次世代アーティスト</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="characteristics">
+                <h2>J-popの特徴</h2>
+                <ul>
+                    <li>✨ アニメやドラマとの密接な関係性</li>
+                    <li>✨ 繊細で美しいメロディライン</li>
+                    <li>✨ 詩的で深い歌詞の世界</li>
+                    <li>✨ 季節感を大切にした表現</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-spotify"></i></a>
+                </div>
+                <p class="copyright">© 2024 World Pop Music. あなたの音楽の旅を応援します! ✨</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            autoplay: {
+                delay: 6000,
+                disableOnInteraction: false,
+            },
+            effect: 'fade',
+            fadeEffect: {
+                crossFade: true
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                bulletActiveClass: 'swiper-pagination-bullet-active pink',
+                bulletClass: 'swiper-pagination-bullet'
+            }
+        });
+    </script>
+</body>
+</html>

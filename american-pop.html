@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>American Pop Music</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">World Pop Music</a>
+            <ul class="nav-links">
+                <li><a href="index.html">K-pop</a></li>
+                <li><a href="jpop.html">J-pop</a></li>
+                <li><a href="american-pop.html" class="active">American Pop</a></li>
+                <li><a href="latin-pop.html">Latin Pop</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a" alt="Concert Stadium">
+                    <div class="swiper-text">
+                        <h2>Stadium Performances</h2>
+                        <p>Epic concerts that unite millions</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3" alt="Live Performance">
+                    <div class="swiper-text">
+                        <h2>Live Music Energy</h2>
+                        <p>The power of live performances</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4" alt="Music Production">
+                    <div class="swiper-text">
+                        <h2>Modern Production</h2>
+                        <p>Cutting-edge sound engineering</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b" alt="Music Festival">
+                    <div class="swiper-text">
+                        <h2>Festival Culture</h2>
+                        <p>Celebrating music together</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>✨ Welcome to American Pop ✨</h1>
+        </header>
+        
+        <main>
+            <section class="intro">
+                <h2>The World of American Pop</h2>
+                <p>American Pop music has been leading global music trends for decades, combining diverse cultural influences with innovative production and powerful vocals.</p>
+            </section>
+
+            <section class="popular-groups">
+                <h2>Top Artists</h2>
+                <div class="group-list">
+                    <div class="group">
+                        <h3>✦ Taylor Swift ✦</h3>
+                        <p>Record-breaking artist known for her storytelling and genre-crossing music</p>
+                    </div>
+                    <div class="group">
+                        <h3>✦ The Weeknd ✦</h3>
+                        <p>Chart-topping artist blending R&B with contemporary pop sounds</p>
+                    </div>
+                    <div class="group">
+                        <h3>✦ Olivia Rodrigo ✦</h3>
+                        <p>Rising star bringing fresh energy to pop music with emotional depth</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="characteristics">
+                <h2>Characteristics of American Pop</h2>
+                <ul>
+                    <li>✨ Powerful Vocal Performances</li>
+                    <li>✨ Cutting-edge Production</li>
+                    <li>✨ Genre-blending Innovation</li>
+                    <li>✨ Trend-setting Music Videos</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-spotify"></i></a>
+                </div>
+                <p class="copyright">© 2024 World Pop Music. Celebrating the diversity of pop! ✨</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            autoplay: {
+                delay: 6000,
+                disableOnInteraction: false,
+            },
+            effect: 'fade',
+            fadeEffect: {
+                crossFade: true
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                bulletActiveClass: 'swiper-pagination-bullet-active pink',
+                bulletClass: 'swiper-pagination-bullet'
+            }
+        });
+    </script>
+</body>
+</html>
